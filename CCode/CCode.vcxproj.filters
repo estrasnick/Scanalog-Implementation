@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GeneralChip.cpp" />
+    <ClCompile Include="ApiCode.c" />
+    <ClCompile Include="CAMCode.c" />
+    <ClCompile Include="ChipRamHelper.cpp" />
+    <ClCompile Include="DownloadManager.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Gain_GainInv1.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="RectifierHold.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseModule.cpp" />
+    <ClCompile Include="GainInv_Module.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Configurator.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="IO.cpp" />
+    <ClCompile Include="Comparator_Module.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterBiquad_Module.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="SumFilter_Module.cpp">
+      <Filter>ChipFunctions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneralChip.h" />
+    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="ChipRamHelper.h" />
+    <ClInclude Include="DownloadManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Gain_GainInv1.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="RectifierHold.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseModule.h" />
+    <ClInclude Include="GainInv_Module.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="Configurator.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="IO.h" />
+    <ClInclude Include="ConnectionSites.h" />
+    <ClInclude Include="Comparator_Module.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterBiquad_Module.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="SumFilter_Module.h">
+      <Filter>ChipFunctions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ChipFunctions">
+      <UniqueIdentifier>{df56bfa8-c940-4130-a4fa-bb94f56cf94e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

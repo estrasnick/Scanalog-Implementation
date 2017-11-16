@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#include ""PortIO.rc""\r\n"
+    "\r\n"
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\FPAA_Application.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FPAA_Application.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FPAA_Application"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FPAA_Application Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004-2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FPAA_Application_DIALOG DIALOGEX 0, 0, 500, 400
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FPAA_Application"
+//FONT 8, "MS Shell Dlg", 0, 0, 0x1
+FONT 8, "Courier New", 0, 0, 0x1
+BEGIN
+    //PUSHBUTTON      "Download Gain",IDC_DOWNLOAD_GAIN,254,8,80,16
+	//  PUSHBUTTON      "Download Half Rectifier", IDC_DOWNLOAD_HALF_RECTIFIER, 254, 27, 80, 16
+    PUSHBUTTON      "Port...",IDC_PORT, 404,8,80,16
+    PUSHBUTTON      "About...",IDC_ABOUT, 404,27,80,16
+    PUSHBUTTON      "Close",IDOK,404,46,80,16
+	PUSHBUTTON      "Reset", IDC_RESET, 404, 65, 80, 16
+    PUSHBUTTON      "Download Test Config", IDC_DOWNLOAD_TEST_CONFIG, 404, 84, 80, 16
+    PUSHBUTTON      "Add Gain", IDC_ADD_GAIN, 404, 103, 80, 16
+	PUSHBUTTON      "Add Vref Comp", IDC_ADD_VREF_COMPARATOR, 404, 122, 80, 16
+	PUSHBUTTON      "Add Ground Comp", IDC_ADD_GROUND_COMPARATOR, 404, 141, 80, 16
+    CONTROL         "Value",IDC_SAMPLE_SLIDER,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,13,19,156,15
+    EDITTEXT        IDC_SAMPLE_EDIT,174,19,58,14,ES_CENTER | ES_AUTOHSCROLL
+	EDITTEXT		IDC_COMMAND_LINE, 10, 380, 200, 16, ES_AUTOHSCROLL
+
+
+
+
+    GROUPBOX        "Gain",IDC_STATIC,7,7,236,40
+
+    LTEXT          "(circuit not yet configured)",IDC_CIRCUIT_VISUALIZATION,15,50,250,320
+
+	//GROUPBOX        "Oscilloscope", IDC_PLOT, 7, 50, 100, 100
+
+    //LTEXT           "To make these controls call a C Code function (for example to change the gain of a gain stage), see the UpdateSampleControls() function in the FPAA_ApplicationDlg.cpp file.",IDC_STATIC,17,41,217,31
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "<Company name>"
+            VALUE "FileDescription", "FPAA_Application"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "FPAA_Application.exe"
+            VALUE "LegalCopyright", "(c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "FPAA_Application.exe"
+            VALUE "ProductName", "FPAA_Application"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FPAA_Application_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\FPAA_Application.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About FPAA_Application..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "PortIO.rc"
+
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\FPAA_Application.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

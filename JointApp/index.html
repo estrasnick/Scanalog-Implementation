@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>Logic Circuits</title>
+
+        <link rel="stylesheet" type="text/css" href="./joint.css" />
+        <link rel="stylesheet" type="text/css" href="./jquery-ui.theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="./jquery.jscrollpane.css" media="all" />
+        <!-- <link rel="stylesheet" type="text/css" href="./logic.css" /> -->
+    </head>
+    <body>
+        <div class="left">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Circuit Diagram:
+                </div>
+                <div class="panel-body" id="paperpanel">
+                    <!-- <canvas id="smoothiecanvas" width="400" height="100"></canvas> -->
+                    <div id="paper"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="right">
+            <input class="runcheckersbutton" id="runcheckersbutton" type="button" value="check for issues">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Parameters:
+                </div>
+                <div class="panel-body">
+                    <div class="row" id="parameter-list">
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="bottom_left">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <!-- Add Circuit Element: -->
+                    Add Circuit Elements:
+                </div>
+                <div class="panel-body palette">
+                    <!-- <input class="addmodulebutton" id="add_gaininv" type="image" value="Amplify signal&#13;&#10;(inverting gain)">
+                    <input class="addmodulebutton" id="add_filter" type="image" value="Filter signal (HPF/LPF)">
+                    <input class="addmodulebutton" id="add_comparator" type="image" value="Threshold to high/low (comparator)">
+                    <input class="addmodulebutton" id="add_sum" type="image" value="Add signals (sum)">
+                    <input class="addmodulebutton" id="add_difference" type="image" value="Subtract signals (difference)"> -->
+                    <input class="addmodulebutton" id="add_gaininv" type="image" value="inverting gain">
+                    <input class="addmodulebutton" id="add_filter" type="image" value="filter">
+                    <input class="addmodulebutton" id="add_comparator" type="image" value="comparator">
+                    <input class="addmodulebutton" id="add_sum" type="image" value="sum">
+                    <input class="addmodulebutton" id="add_difference" type="image" value="difference">
+                    <input class="nextpagebutton" id="next_page" type="image" value="...">
+                </div>
+                <div class="panel-body">
+                    <label for="commandline" id="commandlinelabel">Command Line: </label>
+                    <input class="commandline" id="commandline" type="text" >
+                </div>
+            </div>
+        </div>
+        <div class="bottom_middle">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <!-- Add Circuit Element: -->
+                    Assertions:
+                </div>
+                <div class="panel-body testlist">
+
+                    <div class="testbuttons">
+                        <div id='assertionlist'>
+                            <!-- <input class="addunittestbutton controlbutton" id="addunittestbutton" type="button" value="Add unit test"> -->
+                        </div>
+                        <input class="runcheckersbutton controlbutton" id="runcheckersbutton" type="button" value="(Run global checkers)">
+                        <input class="rununittestsbutton controlbutton" id="rununittestsbutton" type="button" value="(Run unit tests)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_right">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Probe:
+                </div>
+                <div class="panel-body">
+                    <!-- <label for="mainscope">Manual Oscilloscope: </label> -->
+                    <!-- <div class="mainscope" id="mainscope"><span id=manualscopelabel>(Disable autoscanning to manually probe)</span></div> -->
+                    <div class="mainscope" id="mainscope"></div>
+
+                    <label for="samplingRate">Sampling Rate: </label>
+                    <input id="samplingRate" type="number" min="0" max ="2000000" value="1000000">
+
+                    <label for="sampleSize">Sample Size: </label>
+                    <input id="sampleSize" type="number" min="0" max ="12288" value="1024"><br>
+
+                    <label for="autoscan_box">Autoscan Nodes: </label>
+                    <input class="optionbox" id="autoscan_box" name="autoscan_box" type="checkbox" checked="true">
+
+                    <input class="recordbutton" id="recordbutton" type="button" value="Record">
+                    <input class="resumebutton" id="resumebutton" type="button" value="Resume">
+                    <input class="replaybutton" id="replaybutton" type="button" value="Replay">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <script src="./jquery.js"></script> -->
+        <script>
+            window.$ = window.jQuery = require('./jquery.js');
+        </script>
+        <script src="./lodash.js"></script>
+        <script src="./backbone.js"></script>
+        <script src="./plotly-latest.min.js"></script>
+        <script src="./jquery-ui.min.js"></script>
+        <script src="./jquery.mousewheel.js"></script>
+        <script src="./jquery.jscrollpane.min.js"></script>
+        <script src="./joint.js"></script>
+        <script src="./cycle.js"></script>
+        <script src="./logic.js"></script>
+
+    </body>
+</html>

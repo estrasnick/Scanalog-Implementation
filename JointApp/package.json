@@ -1,0 +1,22 @@
+{
+  "name": "FPAA",
+  "version": "1.0.0",
+  "description": "FPAA Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "FPAA",
+    "Stanford"
+  ],
+  "author": "Evan Strasnick",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "serialport": "^4.0.7",
+    "electron": "^1.6.2",
+    "electron-rebuild": "^1.5.7",
+    "rebuild": "^0.1.2"
+  }
+}

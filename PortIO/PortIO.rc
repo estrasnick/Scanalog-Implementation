@@ -1,0 +1,181 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "PortIO_resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "PortIO_resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_PORT DIALOG  0, 0, 199, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Port Select"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select Port",IDC_STATIC,5,5,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,45,9,
+                    148,1
+    COMBOBOX        IDC_PC_SERIAL_PORT,19,18,76,166,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Status of selected port:",IDC_STATIC,18,40,74,8
+    EDITTEXT        IDC_PC_PORT_STATUS,19,52,163,49,ES_MULTILINE | 
+                    ES_READONLY
+    LTEXT           "Select Serial Baud Rate",IDC_PC_SETTING_LABEL,4,114,76,
+                    8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,88,118,
+                    104,1
+    COMBOBOX        IDC_PC_SERIALBAUDRATE,19,126,77,66,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DIN",IDC_DIN_TEXT,19,126,18,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DIN,40,126,34,81,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DCLK",IDC_DCLK_TEXT,85,126,21,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DCLK,107,126,34,95,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,82,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SELECT_PORT DLGINIT
+BEGIN
+    IDC_PC_SERIALBAUDRATE, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_PC_SERIALBAUDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_PC_SERIALBAUDRATE, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3044, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3244, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3344, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3444, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3544, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3644, "\000" 
+    IDC_DIN, 0x403, 3, 0
+0x3744, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3044, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3244, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3344, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3444, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3544, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3644, "\000" 
+    IDC_DCLK, 0x403, 3, 0
+0x3744, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WINIO
+//
+
+WinIo.dll               WINIO                   "res\\WinIo.dll"
+WinIo.sys               WINIO                   "res\\WinIo.sys"
+WinIo.vxd               WINIO                   "res\\WINIO.VXD"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
